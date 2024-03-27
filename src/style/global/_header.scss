@@ -21,7 +21,7 @@
     .categories {
 
         .categories-button {
-            @include buttonReset(none, none, 0 0 0 10px, none, white);
+            @include buttonReset(none, none, 0 0 0 15px, none, white);
             cursor: pointer;
             position: relative;
             
