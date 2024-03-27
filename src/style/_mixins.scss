@@ -1,0 +1,53 @@
+@mixin buttonReset($removeBackgroundColor, $paddingValue, $marginValue, $borderValue, $colorValue) {
+
+    @if $removeBackgroundColor == 'none' {
+        background-color: transparent;
+    }
+    @else {
+        background-color: $removeBackgroundColor;
+    }
+
+    @if $paddingValue == 'none' {
+        padding: 0;
+    }
+    @else {
+        padding: $paddingValue;
+    }
+
+    @if $marginValue == 'none' {
+        margin: 0;
+    }
+    @else {
+        margin: $marginValue;
+    }
+
+    @if $borderValue != none {
+        border: $borderValue;
+    }
+    @else {
+        border: 0;
+    }
+
+    @if $colorValue != none {
+        color: $colorValue;
+    }
+    @else {
+        color: var(--body-text-color);
+    }
+}
+
+@mixin backgroundurl ($Backgroundimageurl, $Backgroundsizevalue, $Backgroundrepeatvalue, $Backgroundpositionvalue){
+    background-image: $Backgroundimageurl;
+    
+    @if $Backgroundsizevalue != none {
+        background-size: $Backgroundsizevalue;
+    }
+    
+    @if $Backgroundrepeatvalue != none {
+        background-repeat: $Backgroundrepeatvalue;
+    }
+    
+    @if $Backgroundpositionvalue != none {
+        background-position: $Backgroundpositionvalue;
+    }
+}

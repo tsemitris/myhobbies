@@ -1,0 +1,16 @@
+@import './src/style/index';
+
+:root {
+    --body-background-color: #e9fbf8;
+    --body-text-color: black;
+
+    --header-background-color: #a5a5a5;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    background-color: var(--body-background-color);
+    padding: 80px 50px 0 50px;
+}
