@@ -14,7 +14,7 @@
         width: 150px;
         height: 50px;
         @include buttonReset(none, none, none, none, none);
-        @include backgroundurl(url('./public/MyHobbies_logo.svg'), cover, no-repeat, center center);
+        @include backgroundurl(url('/MyHobbies_logo.svg'), cover, no-repeat, center center);
         cursor: pointer;
     }
 
