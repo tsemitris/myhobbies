@@ -37,7 +37,9 @@
 }
 
 @mixin backgroundurl ($Backgroundimageurl, $Backgroundsizevalue, $Backgroundrepeatvalue, $Backgroundpositionvalue){
-    background-image: $Backgroundimageurl;
+    @if $Backgroundsizevalue != none {
+        background-image: $Backgroundimageurl;
+    }
     
     @if $Backgroundsizevalue != none {
         background-size: $Backgroundsizevalue;
