@@ -1,0 +1,21 @@
+@import './src/style/index';
+
+:root {
+    --body-background-color: #efe4d3;
+    --body-text-color: black;
+
+    --header-background-color: #5e728f;
+
+    --footer-main-background-color: #5e728f;
+    --footer-secondary-background-color: #cbbeb5;
+
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    background-color: var(--body-background-color);
+    padding-top: 80px;
+    // padding: 80px 50px 0 50px;
+}
